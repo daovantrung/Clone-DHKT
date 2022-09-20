@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
+    <title>ĐHKT-HUE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div id="container">
+        <div class="header">
+            <h1>HỆ THỐNG THÔNG TIN TRƯỜNG ĐẠI HỌC</h1>
+            <div class="header-right">
+                <div class="header-right-text">
+                    <p>Đào Văn Trung(19K4081032)</p>
+                <h4>Vai trò: </h4>
+                <p>Sinh viên Hộp tin nhắn</p>
+                </div>
+            </div>
+        </div>
+        <div class="header-home">
+            <label  for="categlory-mobile-input" class="categlory-mobile">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+            </label>
+
+            <input type="checkbox" hidden class="nav__input" name="" id="categlory-mobile-input">
+            <label for="categlory-mobile-input" class="categlory-overlay">
+
+            </label>
+
+            <nav class="sidebar-menu__mobile">
+                <label for="categlory-mobile-input" class="sidebar-menu__mobile-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/></svg>
+                </label>
+                <ul class = "sidebar-menu__mobile-link">
+                    <p>DANH MỤC</p>
+                    <li>
+                        <a href="#">Giao lưu kết bạn</a>
+                    </li>
+                    <li>
+                        <a href="#" class="feat-btn">Đăng ký học
+                        <span class="fa-solid fa-caret-down first"></span>
+                        </a>
+                        <ul class="feat-show">
+                            <li><a href="#">Sinh viên đăng ký học</a></li>
+                            <li><a href="#">In kết quả đăng ký học</a></li>
+                            <li><a href="#">Quá trình đăng ký học</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Tra cứu điểm</a>
+                    </li>
+                    <li>
+                        <a href="#" class="serv-btn">Đăng ký thi
+                        <span class="fa-solid fa-caret-down second"></span>
+                        </a>
+                        <ul class="serv-show">
+                            <li><a href="#">Sinh viên đăng ký thi</a></li>
+                            <li><a href="#">Kết quả đăng ký thi</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Tra cứu điểm rèn luyện</a></li>
+                    <li><a href="#">Tra cứu học phí</a></li>
+                    <li><a href="#">Chương trình học</a></li>
+                    <li><a href="#">Xử lý học vụ, xét duyệt</a></li>
+                    <li>
+                        <a href="#" class="sms-btn">Tin nhắn
+                        <span class="fa-solid fa-caret-down second"></span>
+                        </a>
+                        <ul class="sms-show">
+                            <li><a href="#">Tạo tin nhắn</a></li>
+                            <li><a href="#">Hộp tin nhắn</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Thanh toán học phí online</a></li>
+                    <li><a href="#">Đăng ký địa chỉ email</a></li>
+                    <li><a href="#">Đổi mật khẩu</a></li>
+                    <li><a href="#">Thông tin cá nhân</a></li>
+                    <li><a href="#">Xem lịch thi cá nhân</a></li>
+                </ul>
+            </nav>
+
+            <div class="search-header-home">
+                <input type="text">
+                <h4>Tìm kiếm</h4>
+            </div>
+            <div class="header-menu">
+                <p>Trang chủ</p>
+                <p>Thoát</p>
+                <p>Hỏi đáp</p>
+                <p>Trợ giúp</p>
+                <select name="" id="">
+                    <option value="">VN</option>
+                    <option value="">EN</option>
+                </select>
+            </div>
+        </div>
+        <div id="main">
+            <div class="slidebar">
+                <h3>DANH MỤC CHÍNH</h3>
+                <nav class="sidebar-menu">
+                    <ul>
+                        <li>
+                            <a href="#">Giao lưu kết bạn</a>
+                        </li>
+                        <li>
+                            <a href="#" class="feat-btn">Đăng ký học
+                            <span class="fa-solid fa-caret-down first"></span>
+                            </a>
+                            <ul class="feat-show">
+                                <li><a href="#">Sinh viên đăng ký học</a></li>
+                                <li><a href="#">In kết quả đăng ký học</a></li>
+                                <li><a href="#">Quá trình đăng ký học</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Tra cứu điểm</a>
+                        </li>
+                        <li>
+                            <a href="#" class="serv-btn">Đăng ký thi
+                            <span class="fa-solid fa-caret-down second"></span>
+                            </a>
+                            <ul class="serv-show">
+                                <li><a href="#">Sinh viên đăng ký thi</a></li>
+                                <li><a href="#">Kết quả đăng ký thi</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Tra cứu điểm rèn luyện</a></li>
+                        <li><a href="#">Tra cứu học phí</a></li>
+                        <li><a href="#">Chương trình học</a></li>
+                        <li><a href="#">Xử lý học vụ, xét duyệt</a></li>
+                        <li>
+                            <a href="#" class="sms-btn">Tin nhắn
+                            <span class="fa-solid fa-caret-down second"></span>
+                            </a>
+                            <ul class="sms-show">
+                                <li><a href="#">Tạo tin nhắn</a></li>
+                                <li><a href="#">Hộp tin nhắn</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Thanh toán học phí online</a></li>
+                        <li><a href="#">Đăng ký địa chỉ email</a></li>
+                        <li><a href="#">Đổi mật khẩu</a></li>
+                        <li><a href="#">Thông tin cá nhân</a></li>
+                        <li><a href="#">Xem lịch thi cá nhân</a></li>
+                    </ul>
+                </nav>
+              <div class="box-content-slidebar">
+                <div class="box-content-slidebar-header">
+                    <h5>Hệ thống mẫu biểu dành cho sinh viên</h5>
+                </div>
+                <div class="box-content-slider-text">
+                    <p>
+                        Đăng ký Xin phiếu điểm
+                    </p>
+                    <ol >
+                        <li>Đơn đề nghị không tính điểm HP tự chọn</li>
+                        <li>Đơn xin rút lại HP đã đăng ký</li>
+                        <li>Đơn xin thực tập lại tốt nghiệp</li>
+                        <li>Xin thi tốt nghiệp</li>
+                        <li>Đơn xin xét tốt nghiệp</li>
+                        <li>Đơn xin hoãn xét tốt nghiệp</li>
+                        <li>Đơn xin học ghép, học lại</li>
+                        <li>Đơn xin chuyển khóa luận sang chuyên đề</li>
+                        <li>Đơn xin đăng ký thêm HP</li>
+                        <li>Đơn xin học cải thiện điểm</li>
+                        <li>Đơn xin thi vắng thi HP</li>
+                        <li>Đơn xin thi lại HP</li>
+                    </ol>
+                </div>
+                
+              </div>
+              <div class="box-content-slidebar">
+                <div class="box-content-slidebar-header">
+                    <h5>Liên kết hữu ích</h5>
+                </div>
+                <div class="box-content-slider-text">
+                    <p>
+                        Đăng ký Xin phiếu điểm
+                    </p>
+                   
+                </div>
+              </div>
+              
+              <div class="box-content-slidebar">
+                <div class="box-content-slidebar-header">
+                    <h5>Thăm dò ý kiến</h5>
+                </div>
+                <div class="box-content-slider-text">
+                    <p>
+                        Chưa có bình chọn nào
+                    </p>
+                   <div class="btn-box-content">
+                    <button>Đồng ý</button>
+                    <button>Xem kết quả</button>
+                   </div>
+                </div>
+              </div>
+              <div class="box-content-slidebar">
+                <div class="box-content-slidebar-header">
+                    <h5>Điều tra việc làm</h5>
+                </div>
+                <div class="box-content-slider-text">
+                    <p>
+                        Bạn đã có việc làm chưa?
+                    </p>
+                   <div class="btn-box-content">
+                   <input type="radio" name="1">
+                   <label for="">Đã có</label>
+                   <input type="radio" name="1">
+                   <label for="">Chưa có</label>
+                   </div>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+                <div class="header-content">
+                    <h3>DHCQ</h3>
+                    <p>Xem tất cả</p>
+                </div>
+                <div class="text-content">
+                   <p><i class="fa-solid fa-bullhorn"></i>THÔNG BÁO (V/V CHUYỂN PHÒNG HỌC Ở GIẢNG ĐƯỜNG C VÀO NGÀY 21/09 VÀ 22/09 ĐỂ ĐÓN TIẾP TÂN SINH VIÊN) (19/09/2022)</p>
+                   <p><i class="fa-solid fa-bullhorn"></i>THÔNG BÁO: VỀ VIỆC THU HỌC PHÍ HỌC KỲ I NĂM HỌC 2022 - 2023 (12/09/2022)</p>
+                   <p><i class="fa-solid fa-bullhorn"></i>Thông báo: Về việc đóng phí bảo hiểm y tế và bảo hiểm thân thể năm 2022 - 2023 (08/09/2022)</p>
+                   <p><i class="fa-solid fa-bullhorn"></i>Thông báo: V/v sinh viên K53, K54, K55 thuộc diện chế độ chính sách năm học 2022-2023 (07/09/2022)
+
+                </p>
+                   <p><i class="fa-solid fa-bullhorn"></i>THÔNG BÁO (V/v kế hoạch đi TTCK học kỳ 1 năm học 2022-2023 của SV Khóa 53 và các Khóa trước - Hệ CQ) (05/09/2022)</p>
+                   <p><i class="fa-solid fa-bullhorn"></i>[THÔNG BÁO] Phúc khảo bài thi Đợt 2 (thi trực tiếp) - Học kỳ 2 năm học 2021 - 2022 (30/08/2022)</p>
+                   <p><i class="fa-solid fa-bullhorn"></i>THÔNG BÁO (V/v hình thức thực tập của sinh viên đi Thực tập cuối khóa học kỳ 1 năm học 2022-2023) (23/08/2022)</p>
+                   <p><i class="fa-solid fa-bullhorn"></i>THÔNG BÁO (V/v tiếp tục đăng ký học phần HK1 năm học 2022-2023) (19/08/2022)</p>
+                   
+                </div>
+                <div class="text-content ">
+                    <p class="text-content__title"><i class="fa-solid fa-bullhorn"></i>THÔNG BÁO (V/V LỊCH CHUYỂN PHÒNG THI HỌC KỲ 3 NGÀY 29/8 VÀ 31/08 (29/08/2022)</p>
+                   <p><i class="fa-solid fa-bullhorn"></i>THÔNG BÁO (V/V CHUYỂN PHÒNG HỌC Ở GIẢNG ĐƯỜNG C VÀO NGÀY 21/09 VÀ 22/09 ĐỂ ĐÓN TIẾP TÂN SINH VIÊN) (19/09/2022)</p>
+                   <p><i class="fa-solid fa-bullhorn"></i>THÔNG BÁO: VỀ VIỆC THU HỌC PHÍ HỌC KỲ I NĂM HỌC 2022 - 2023 (12/09/2022)</p>
+                   <p><i class="fa-solid fa-bullhorn"></i>Thông báo: Về việc đóng phí bảo hiểm y tế và bảo hiểm thân thể năm 2022 - 2023 (08/09/2022)</p>
+                   <p><i class="fa-solid fa-bullhorn"></i>Thông báo: V/v sinh viên K53, K54, K55 thuộc diện chế độ chính sách năm học 2022-2023 (07/09/2022)
+
+                </p>
+                   <p><i class="fa-solid fa-bullhorn"></i>THÔNG BÁO (V/v kế hoạch đi TTCK học kỳ 1 năm học 2022-2023 của SV Khóa 53 và các Khóa trước - Hệ CQ) (05/09/2022)</p>
+                   <p><i class="fa-solid fa-bullhorn"></i>[THÔNG BÁO] Phúc khảo bài thi Đợt 2 (thi trực tiếp) - Học kỳ 2 năm học 2021 - 2022 (30/08/2022)</p>
+                   <p><i class="fa-solid fa-bullhorn"></i>THÔNG BÁO (V/v hình thức thực tập của sinh viên đi Thực tập cuối khóa học kỳ 1 năm học 2022-2023) (23/08/2022)</p>
+                   <p><i class="fa-solid fa-bullhorn"></i>THÔNG BÁO (V/v tiếp tục đăng ký học phần HK1 năm học 2022-2023) (19/08/2022)</p>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-header">
+                <div class="footer-header-left">
+                    <p>Đường dây nóng</p>
+                    <p>054.3883951</p>
+                </div>
+                <div class="header-menu">
+                    <p>Trang chủ</p>
+                    <p>Thoát</p>
+                    <p>Hỏi đáp</p>
+                    <p>Trợ giúp</p>
+
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p><i class="fa-solid fa-print"></i>In trang này</p>
+                    <p><i class="fa-solid fa-share"></i></i>Gửi trang này</p>
+                    <p><i class="fa-solid fa-star"></i>Thêm vào ưa thích</p>
+                </div>
+                <div class="footer-bottom-right">
+                    <p>Số người đang Online: <a>461</a></p>
+                    <p>Lượt truy cập :<a> 150128</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
